@@ -1,1 +1,7 @@
-print("oi, mundo")
+import requests
+
+webhook_url = "https://discord.com/api/webhooks/1333968810360700968/v_5vTI4Oz5UW63wQF3hUW4WIhzbU2m_MoMdPMMm-DcSwFqhf5a3QZZD4a_k4aKdMgr-K"
+
+data = {"content": "Oi!"}
+
+response = requests.post(webhook_url, json=data)
