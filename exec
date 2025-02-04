@@ -1,2 +1,1 @@
-groups['Minesweeper'] = groups.pop('Jianbros')
-requests.post(f"{data_server}/set_data_for391230324_v2", json={'password': DATA_AUTH_PASSWORD, 'groups': groups, 'users': users})
+
