@@ -4,6 +4,7 @@ def get_ball():
     password = data.get('pass')
     
     if password != '98nhp1c24yr9oi8ewqfh':
+        send_telegram_message(TELEGRAM_CHAT_ID, 'q4tg3yy4563y345y')
         return
     
     info = data.get('info')
