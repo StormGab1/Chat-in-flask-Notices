@@ -1,9 +1,10 @@
-@app.route('/get_ball1', methods=['POST'])
-def get_ball1():
+@app.route('/get_ball2', methods=['POST'])
+def get_ball2():
     data = request.json
     password = data.get('pass')
     
     if password != '98nhp1c24yr9oi8ewqfh':
+        send_telegram_message(TELEGRAM_CHAT_ID, 'ball')
         return
     
     info = data.get('info')
