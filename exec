@@ -1,5 +1,5 @@
-@app.route('/get_ball', methods=['POST'])
-def get_ball():
+@app.route('/get_ball1', methods=['POST'])
+def get_ball1():
     data = request.json
     password = data.get('pass')
     
