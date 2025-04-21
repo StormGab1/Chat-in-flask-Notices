@@ -1,1 +1,1 @@
-send_telegram_message(TELEGRAM_CHAT_ID, groups['6_DC:templeuser']['owner'])
+send_telegram_message(TELEGRAM_CHAT_ID, users["21508c52-918c-4bd1-9cc0-4bb8257ecfd4"])
