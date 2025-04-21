@@ -1,1 +1,11 @@
-send_telegram_message(TELEGRAM_CHAT_ID, users["21508c52-918c-4bd1-9cc0-4bb8257ecfd4"])
+import re
+
+palavras_proibidas = ["carlos", "templeuser"]
+removidos = []
+
+for group_name in list(groups.keys()):
+    for palavra in palavras_proibidas:
+        if re.search(palavra, group_name, re.IGNORECASE):
+            removidos.append(group_name)
+            del groups[group_name]
+            break
